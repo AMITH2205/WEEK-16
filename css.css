@@ -1,0 +1,74 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 3;
+  color: white;
+  background: grey;
+  font-size: medium;
+}
+
+main {
+  position: relative;
+  min-height: calc(100vh - 4rem);
+}
+ul.paginated-list {
+  position: relative;
+  align-items: center;
+  display: inline-block;
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination-container {
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.pagination-number,
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background: #0085b6;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+  background-color: #ffdfb9;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .heart {
+  color: #dc143c;
+}
